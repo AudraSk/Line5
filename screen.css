@@ -1,1 +1,126 @@
-/* Add screen styles below */
+/*
+  Colors
+*/
+:root {
+  --main-background: #051923;
+  --main-text: #FFFAFF;
+}
+
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--main-background);
+  color: var(--main-text);
+  line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+#myVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  PSW Core Styles
+*/
+header {
+  color: var(--main-background);
+  height: 100vh;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 6em;
+}
+
+header p {
+  font-size: 4em;
+  text-align: center;
+  margin-top: 40vh;
+  color: rgba(0,0,0,0.3);
+}
+
+header video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+section {
+  padding: 10vh;
+  background: var(--main-background);
+}
+
+section p {
+  margin-bottom: 1vh;
+}
+
+footer {
+  height: 50vh;
+}
+
+.map {
+  height: 40vh;
+}
+
+.map aside {
+  padding: 2vh;
+  background: rgba(5, 25, 35, 80%);
+}
+
+.map aside p {
+  margin: 0;
+}
+
+/* Temporary map backgrounds */
+#na-pipelines {
+  background: url('images/pipelines-temp.jpg') center center/cover no-repeat;
+}
+
+#line-5 {
+  background: url('images/line5-temp.jpg') center center/cover no-repeat;
+}
+
+#native-lands {
+  background: url('images/lands-temp.jpg') center center/cover no-repeat;
+}
+
+#oil-spill {
+  background: url('images/spill-temp.jpg') center center/cover no-repeat;
+}
