@@ -6,7 +6,6 @@
   --main-text: #FFFAFF;
 }
 
-
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -84,6 +83,16 @@ section.callout {
   padding: 10vh 20vh;
 }
 
+section.interview {
+  padding: 10vh 20vh;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
 section p {
   margin-bottom: 3vh;
   font-size: 1.6em;
@@ -98,30 +107,24 @@ footer {
 
 .map aside {
   padding: 2vh;
-  background: rgba(5, 25, 35, 80%);
+  background: rgba(5, 25, 35, 0.8);
+  position: absolute;
+  margin: 50vh 0 0 2vh;;
+  width: 50%;
+  z-index: 100;
 }
 
 .map aside p {
   margin: 0;
+  font-size: 1.2em;
 }
 
 /* Temporary map backgrounds */
 #na-pipelines {
   background: url('images/map-test.png') center center/cover no-repeat;
+  background-color: var(--main-text);
 }
 
 #na-pipelines .map-placeholder {
   background: url('images/map-data-test.png') center center/cover no-repeat;
-}
-
-#line-5 {
-  background: url('images/line5-temp.jpg') center center/cover no-repeat;
-}
-
-#native-lands {
-  background: url('images/lands-temp.jpg') center center/cover no-repeat;
-}
-
-#oil-spill {
-  background: url('images/spill-temp.jpg') center center/cover no-repeat;
 }
